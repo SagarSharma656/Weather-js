@@ -1,0 +1,110 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+    padding: 0;margin: 0;
+}
+#wrapper{
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+}
+#loc-access-btn{
+    background-color: rgb(46, 114, 197);
+    /* background-color: rgba(219, 226, 239, 0.5); */
+}
+
+
+
+.current-tab{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 5px;
+}
+
+
+.active{
+    z-index: 10 !important;
+    opacity: 1 !important;
+}
+
+
+.card-box{
+    background-color: rgba(187, 193, 201, 0.5);
+}
+#search-btn{
+    background-color: rgb(63, 114, 175);
+}
+#input-city{
+    background-color: rgb(129, 152, 182);
+    
+}
+#input-city::placeholder{
+    color: white;
+}
+
+
+@media screen and (max-width: 780px){
+    #switch-btn{
+        width: 80%;
+    }
+    #weather-container{
+        width: 80%;
+    }
+    #search-btn{
+        width: 2rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    #grant-access-text{
+        font-size: 1.25rem;
+    }
+    #grant-access-disc{
+        font-size: 0.8rem;
+    }
+    #loc-access-btn{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 380px) {
+    #switch-btn{
+        width: 95%;
+    }
+    #weather-container{
+        width: 95%;
+    }
+    #loding-img{
+        width: 100px;
+        height: 100px;
+    }
+    #input-city{
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 340px) {
+    .card-img{
+        width: 4rem;
+    }
+    .card-text{
+        font-size: 0.75rem;
+    }
+}
+@media screen and (max-width: 305px) {
+    #main-heading{
+        font-size: 1.4rem;
+    }
+    #search-weather-btn{
+        font-size: 0.7rem;
+    }
+    #your-weather-btn{
+        font-size: 0.7rem;
+    }
+    #city-text{
+        font-size: 1.25rem;
+    }
+    #temp{
+        font-size: 2rem;
+    }
+}
